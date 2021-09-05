@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b0f6ce1c29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <form name="f1">
+        <h1>Please sign up</h1>
+        <div class="nameer">
+            <input type="text" class="form__field" name="fName" required>
+            <label for="name" class="form__label">First Name</label>
+        </div>
+        <div class="nameer">
+            <input type="text" name="lName" required>
+            <label for="surname" class="form__label">Last Name</label>
+        </div>
+        <div class="nameer">
+            <input type="text" name="eAdress" required>
+            <label for="email" class="form__label">Email</label>
+        </div>
+        <div class="nameer">
+            <input type="password" name="password" required>
+            <label for="password" class="form__label">Password</label>
+        </div>
+        <div class="agree">
+            <input type="checkbox" name="check" required>
+            <p>I agree...</p>
+        </div>
+        <input type="button" value="Sign Up" name="submit" disabled>
+    </form>
+
+    <div id="myModal">
+        <div class="modalContent">
+            <div class="empty">
+                <i class="far fa-check-circle"></i>
+            </div>
+            <div class="welcome">
+                <h1>Great!</h1>
+                <p>Your account has been created successfully.</p>
+                <input type="button" id="close" value="Start exploring">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
